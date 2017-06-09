@@ -1,12 +1,14 @@
 .primary-nav {
-  &--pull-right{
+
+
+  &--pull-right {
     float: right;
   }
 
   ul {
     margin: 0;
     padding: 0;
-    padding: 12px 0px;
+    @mixin clearfix;
   }
 
   li {
@@ -17,8 +19,9 @@
 
   a {
     color: #FFF;
-    text-decoration: none;
     font-weight: 300;
+    text-decoration: none;
+    display: block;
+    padding: 12px 0;
   }
-
 }
