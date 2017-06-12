@@ -1,13 +1,13 @@
 module.exports = {
-  entry: "./app/assets/scripts/App.js",
+  entry: __dirname + "/app/assets/scripts/App.js",
   output: {
-    path: "./app/temp/scripts",
+    path: __dirname + "/app/temp/scripts",
     filename: "App.js"
   },
   module: {
     loaders: [
       {
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           presets: ['es2015']
         },
